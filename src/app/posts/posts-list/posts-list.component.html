@@ -1,0 +1,17 @@
+
+<div *ngFor="let posts of posts | async">
+
+ <h2  routerLink="{{posts.id}}" >{{posts.title}}</h2>
+ 
+
+  <p>{{posts.content}}</p>
+
+</div>
+ <!-- <div *ngIf="auth.afAuth.authState | async as user; else showLogin" >-->
+    <button mat-raised-button color="accent" routerLink="/dashboard">Write a Post</button>
+   <!-- <button mat-button (click)="auth.logout()">Logout</button>
+    </div>
+    <ng-template #showLogin>
+          <button mat-button (click)="auth.login()">LogIn</button>
+    </ng-template>-->
+
